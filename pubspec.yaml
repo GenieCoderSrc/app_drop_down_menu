@@ -7,6 +7,7 @@ issue_tracker: https://github.com/GenieCoderSrc/app_drop_down_menu/issues
 
 
 environment:
+
   sdk: ^3.7.2
   flutter: ">=1.17.0"
 
