@@ -45,7 +45,10 @@ class AppDropdownButtonFormField<T> extends StatelessWidget {
       //   fillColor: Colors.white,
       // ),
       decoration: InputDecoration(
-        contentPadding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+        contentPadding: const EdgeInsets.symmetric(
+          vertical: 10,
+          horizontal: 15,
+        ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
           borderSide: const BorderSide(color: Colors.grey, width: 1),
@@ -63,17 +66,21 @@ class AppDropdownButtonFormField<T> extends StatelessWidget {
       // dropdownColor: Colors.blueAccent,
       value: selectedValue,
       onChanged: onChanged,
-      items: dropdownItems.map(
-        (T item) {
-          return DropdownMenuItem<T>(
-            value: item,
-            // child: Text(val),
-            child: itemBuilder != null
-                ? itemBuilder!(item) // Use custom item builder if provided
-                : Text(item.toString()), // Fallback to default text display
-          );
-        },
-      ).toList(),
+      items:
+          dropdownItems.map((T item) {
+            return DropdownMenuItem<T>(
+              value: item,
+              // child: Text(val),
+              child:
+                  itemBuilder != null
+                      ? itemBuilder!(
+                        item,
+                      ) // Use custom item builder if provided
+                      : Text(
+                        item.toString(),
+                      ), // Fallback to default text display
+            );
+          }).toList(),
     );
   }
 }

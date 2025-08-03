@@ -12,9 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'App Drop Down Menu Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const DropDownExamplePage(),
     );
   }
@@ -35,9 +33,7 @@ class _DropDownExamplePageState extends State<DropDownExamplePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Drop Down Menu Example'),
-      ),
+      appBar: AppBar(title: const Text('Drop Down Menu Example')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -85,10 +81,9 @@ class _DropDownExamplePageState extends State<DropDownExamplePage> {
                   _selectedValue3 = value;
                 });
               },
-              itemBuilder: (item) => Text(
-                item,
-                style: const TextStyle(color: Colors.black),
-              ),
+              itemBuilder:
+                  (item) =>
+                      Text(item, style: const TextStyle(color: Colors.black)),
             ),
           ],
         ),
