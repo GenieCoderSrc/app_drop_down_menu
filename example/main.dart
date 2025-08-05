@@ -81,9 +81,8 @@ class _DropDownExamplePageState extends State<DropDownExamplePage> {
                   _selectedValue3 = value;
                 });
               },
-              itemBuilder:
-                  (item) =>
-                      Text(item, style: const TextStyle(color: Colors.black)),
+              itemBuilder: (item) =>
+                  Text(item, style: const TextStyle(color: Colors.black)),
             ),
           ],
         ),

@@ -66,21 +66,15 @@ class AppDropdownButtonFormField<T> extends StatelessWidget {
       // dropdownColor: Colors.blueAccent,
       value: selectedValue,
       onChanged: onChanged,
-      items:
-          dropdownItems.map((T item) {
-            return DropdownMenuItem<T>(
-              value: item,
-              // child: Text(val),
-              child:
-                  itemBuilder != null
-                      ? itemBuilder!(
-                        item,
-                      ) // Use custom item builder if provided
-                      : Text(
-                        item.toString(),
-                      ), // Fallback to default text display
-            );
-          }).toList(),
+      items: dropdownItems.map((T item) {
+        return DropdownMenuItem<T>(
+          value: item,
+          // child: Text(val),
+          child: itemBuilder != null
+              ? itemBuilder!(item) // Use custom item builder if provided
+              : Text(item.toString()), // Fallback to default text display
+        );
+      }).toList(),
     );
   }
 }

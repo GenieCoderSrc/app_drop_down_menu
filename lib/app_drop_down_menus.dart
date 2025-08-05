@@ -47,23 +47,22 @@ class _AppDropDownMenuState<T> extends State<AppDropDownMenu<T>> {
         });
       },
 
-      items:
-          widget.dropdownMenuEntries.map((DropdownMenuEntry<T> entry) {
-            return DropdownMenuItem<T>(
-              value: entry.value,
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  entry.leadingIcon ??
-                      const SizedBox(
-                        width: 24,
-                      ), // Provide a default if leadingIcon is null
-                  const SizedBox(width: 8.0),
-                  Text(entry.label ?? ''),
-                ],
-              ),
-            );
-          }).toList(),
+      items: widget.dropdownMenuEntries.map((DropdownMenuEntry<T> entry) {
+        return DropdownMenuItem<T>(
+          value: entry.value,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              entry.leadingIcon ??
+                  const SizedBox(
+                    width: 24,
+                  ), // Provide a default if leadingIcon is null
+              const SizedBox(width: 8.0),
+              Text(entry.label ?? ''),
+            ],
+          ),
+        );
+      }).toList(),
       dropdownColor: widget.fillColor,
       // Note: 'style' property could be added here to style the selected item text
     );

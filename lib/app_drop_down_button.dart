@@ -36,10 +36,9 @@ class AppDropDownButton extends StatelessWidget {
       isExpanded: isExpanded,
       iconSize: 30.0,
       style: const TextStyle(color: Colors.blue),
-      items:
-          items.map((val) {
-            return DropdownMenuItem<String>(value: val, child: Text(val));
-          }).toList(),
+      items: items.map((val) {
+        return DropdownMenuItem<String>(value: val, child: Text(val));
+      }).toList(),
       onChanged: onChanged,
     );
   }
