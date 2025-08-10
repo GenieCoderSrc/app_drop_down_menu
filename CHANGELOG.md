@@ -1,6 +1,3 @@
-## 0.0.1
-
-* TODO: Describe initial release.
 # Changelog
 
 All notable changes to this project will be documented in this file.
