@@ -17,7 +17,6 @@ class AppDropdownButtonFormField<T> extends StatelessWidget {
   final List<T> dropdownItems;
   final String? hint;
 
-  // final ValueChanged? onChanged;
   final ValueChanged<T?>? onChanged;
   final IconData? icon;
   final bool isExpanded;
@@ -27,23 +26,6 @@ class AppDropdownButtonFormField<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DropdownButtonFormField(
-      // decoration: InputDecoration(
-      //   contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-      //   enabledBorder: OutlineInputBorder(
-      //     borderSide: BorderSide(color: Colors.grey.shade200, width: 2),
-      //     borderRadius: BorderRadius.circular(30),
-      //   ),
-      //   focusedBorder: OutlineInputBorder(
-      //     borderSide: BorderSide(color: Colors.black38, width: 2),
-      //     borderRadius: BorderRadius.circular(20),
-      //   ),
-      //   border: OutlineInputBorder(
-      //     borderSide: BorderSide(color: Colors.black54, width: 2),
-      //     borderRadius: BorderRadius.circular(20),
-      //   ),
-      //   filled: true,
-      //   fillColor: Colors.white,
-      // ),
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.symmetric(
           vertical: 10,
@@ -64,7 +46,7 @@ class AppDropdownButtonFormField<T> extends StatelessWidget {
       ),
       validator: (value) => value == null ? "Choose" : null,
       // dropdownColor: Colors.blueAccent,
-      value: selectedValue,
+      initialValue: selectedValue,
       onChanged: onChanged,
       items: dropdownItems.map((T item) {
         return DropdownMenuItem<T>(
