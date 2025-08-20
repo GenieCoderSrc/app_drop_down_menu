@@ -1,14 +1,13 @@
 name: app_drop_down_menu
 description: "Simple and customizable dropdown widgets for Flutter. Provides easy-to-use AppDropDownButton, AppDropDownMenu, and AppDropdownButtonFormField with flexible styles, icons, and form integration. Perfect for modern app UIs."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/GenieCoderSrc/app_drop_down_menu
 repository: https://github.com/GenieCoderSrc/app_drop_down_menu
 issue_tracker: https://github.com/GenieCoderSrc/app_drop_down_menu/issues
 
 
 environment:
-
-  sdk: ^3.8.1
+  sdk: ^3.9.0
   flutter: ">=1.17.0"
 
 dependencies:
@@ -18,7 +17,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

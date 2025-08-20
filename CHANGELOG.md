@@ -2,9 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.2
+
+### Aug 22, 2025
+
+### ✨ Updated
+
+- Updated Dart sdk to 3.9.0
+- Removed `flutter_lints` Dependency
+
 ## 0.0.1
+
 ### Initial Release
+
 ### Added
+
 - Initial release of `app_drop_down_menu` package.
 - Added `AppDropDownButton` widget for basic dropdown functionality.
 - Added `AppDropDownMenu` widget with flexible entry building.
@@ -15,6 +27,7 @@ All notable changes to this project will be documented in this file.
 ---
 
 ### Notes
+
 - This is the first stable version.
 - Ready for production use.
 - Future updates will include additional style options and extended functionality.
